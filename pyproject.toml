@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "project-boychenko-b24-505"
+version = "0.1.0"
+description = ""
+packages = [
+    { include = "project_func" },
+]
+authors = ["Enemy <boychenko.idb@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+prompt = "^0.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+project = "project_func.scripts.main_base:main"
